@@ -47,4 +47,29 @@
 </ol> 
 <p id="el">Фрагмент страницы</p>
 <p>Круг — часть плоскости, которая лежит внутри окружности. Если радиус равен нулю, то круг вырождается в точку. Круг, имеющий толщину (незначительную по сравнению с радиусом), нередко называют диском</p><br>
-
+<form><label>Имя: <input name="name_polz" maxlength="25" size="25" value=""></label><br>
+        <br><label>email:<input name="email_polz" type="email" maxlength="128" size="40" placeholder="Введите ваш email"></label><br>
+        <br><label>Дата рождения: <input name="data_polz" type="date" value="2004-01-01"></label><br>
+        <br><label>Пол:<input name="pol" type="radio" checked="checked"> Мужской</label><label><input name="pol" type="radio"> Женский</label><br>
+        <br>Количество конечностей:
+        <label><input name="kol_kon" type="radio" checked="">2</label>
+        <label><input name="kol_kon" type="radio"> 4</label>
+        <label><input name="kol_kon" type="radio">6</label>
+        <label><input name="kol_kon" type="radio">8</label><br>
+        <br><label>Суперспособности:<br>
+            <select name="super" multiple="multiple" size="4">
+                <option value="1">Регенерация</option>
+                <option value="2">Невидимость</option>
+                <option value="3">Техногенез</option>
+                <option value="4">Криогенез</option>
+            </select></label><br>
+        <br><label>Поле для биографии:<br>
+            <textarea name="bio" cols="30" rows="20" maxlength="625">Биография персонажа</textarea>
+        </label><br>
+        <br><label>
+            С контрактом ознакомлен(а):
+            <input type="checkbox">
+        </label><br>
+        <br><label>
+            <input type="submit" value="Отправить">
+        </label></form>
