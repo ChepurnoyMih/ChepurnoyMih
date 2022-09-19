@@ -104,79 +104,43 @@
   </table>
 
 <br>
-<ol>
-    <li>
-        <form>
-        <p>
-            <label>ИМЯ:</label>
-            <input maxlength="10" size="10">
-        </p>
-        </form>
-    </li>
-    <li>
-        <form>
-            <p>
-                <label>EMAIL:</label> 
-                <input maxlength="100" size="30" type="EMAIL" name="LOGIN">
-            </p>
-        </form>
-    </li>
-    <li>
-        <form>
-            <p>
-                <label>ДАТА РОЖДЕНИЯ: </label>
-                <input type="date"/>
-            </p>
-        </form>
-    </li>
-    <li>
-        <form>
-                <label>ВАШ ПОЛ:</label>
-                <p><input name="pol" type="radio" checked> Мужской</p>
-                <p><input name="pol" type="radio"> Женский</p>
-        </form>
-    </li>
-    <li>
-        <form>
-                <label>КОЛ-ВО КОНЕЧНОСТЕЙ:</label>
-                <p><input name="konech" type="radio" checked> 4</p>
-                <p><input name="konech" type="radio"> 6</p>
-        </form>
-    </li>
-    <li>
-        <form>
-            <label>СУПЕРСПОСОБНОСТИ:</label>
-            <br>
-            <select name="supersila" multiple="multiple" size="4">
-                <option value="1">БЕССМЕРТИЕ</option>
-                <option value="2">ПРОХОЖДЕНИЕ СКВОЗЬ СТЕНЫ</option>
-                <option value="3">ЛЕВИТАЦИЯ</option>
-                <option value="4">ВЛАСТЬ НАД ЭЛЕКТРИЧЕСТВОМ</option>
-            </select>
-        </form>
-        <br>
-    </li>
-    <li>
-        <form>
-            <label>ПОЛЕ ДЛЯ БИОГРАФИИ:</label>
-            <p><textarea cols="35" rows="25" maxlength="525" name="BIO"></textarea></p>
-        </form>
-    </li>
-    <li>
-        <form>
-            <label>С КОНТРАКТОМ ОЗНАКОМЛЕН (А):</label>
+<form><label>Имя: <input name="name_polz" maxlength="25" size="25" value=""></label><br>
+        <br><label>email:<input name="email_polz" type="email" maxlength="128" size="40" placeholder="Введите ваш email"></label><br>
+        <br><label>Дата рождения: <input name="data_polz" type="date" value="2003-02-01"></label><br>
+        <br><label>Пол:<input name="pol" type="radio" checked="checked"> Мужской</label><label><input name="pol" type="radio"> Женский</label><br>
+        <br>Количество конечностей:
+        <label><input name="kol_kon" type="radio" checked="">2</label>
+        <label><input name="kol_kon" type="radio"> 4</label>
+        <label><input name="kol_kon" type="radio">6</label>
+        <label><input name="kol_kon" type="radio">8</label>
+        <label><input name="kol_kon" type="radio">10</label>
+        <label><input name="kol_kon" type="radio"> 12</label>
+        <label><input name="kol_kon" type="radio">20</label>
+        <label><input name="kol_kon" type="radio">40</label>
+        <label><input name="kol_kon" type="radio">отсутствуют</label>
+ <br>
+        <br><label>Суперспособности:<br>
+            <select name="super" multiple="multiple" size="10">
+                <option value="1">Регенерация</option>
+                <option value="2">Невидимость</option>
+                <option value="3">Техногенез</option>
+                <option value="4">Криогенез</option>
+                <option value="5">Пирогинез</option>
+                <option value="6">Теликинез</option>
+                <option value="7">Полет</option>
+                <option value="8">Контроль энергии</option>
+                <option value="9">Магнетизм</option>
+                <option value="10">мимикрия</option>
+             
+            </select></label><br>
+        <br><label>Поле для биографии:<br>
+            <textarea name="bio" cols="30" rows="20" maxlength="625">Биография</textarea>
+        </label><br>
+        <br><label>
+            С контрактом ознакомлен(а):
             <input type="checkbox">
-        </form>
-        <br>
-    </li>
-    <li>
-        <form>
-            <button>ОТПРАВИТЬ</button>
-        </form>
-    </li>
-</ol>
-<footer>
-    (c)Сивцова Альбина Владимировна 2022.
-     Улучшайте свою жизнь с удовольствием!
-</footer>
+        </label><br>
+        <br><label>
+            <input type="submit" value="Отправить">
+        </label></form>
 </body>
