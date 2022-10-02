@@ -1,60 +1,29 @@
-<head>
-    <title>Задание 3(Шапка сайта)</title>
-  </head>
-<body style="margin:0;">
-  <div style="width:100%; background-color:lightgreen; height:125px;">
- <u2> <img style="float:left; margin:10px; width:100px; height:100px;" src="https://i.pinimg.com/originals/23/80/0b/23800b995292379883a15d9a4c382b22.png" alt="Описание " />
-      </u2> <div style="background-color:#B8860B; padding:10px;"><h1>Шапка</h1></div>
-    </div>
- <div style="max-width:500px; background-color:Red; margin:auto; margin-top:10px; padding:5px;">
-  <style>
-   ul.links {
-    margin: 0; /*отступ*/
-    padding: 4px; /*поля*/
-   }
-   ul.links li {
-    display: inline;
-    margin-right: 5px; /* Отступ слева */
-    padding: 3px;
-   }
-  </style>
-     <style>
-     u2.fullscreen-bg {
- background: url(image.jpg);
- background-position: center;
- background-size: cover;
- width: 100%;
- height: 100vh;
-         </style>
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Задание 3</title>
+        <link rel="stylesheet" href="https://chepurnoymih.github.io/stil.css">
+ </head>
 
-  <nav>
-      <nav id="nav">
-      <div>
-        <a class="nav" href="#content_1">Список гипперсылок</a>
-      </div>
-      <div>
-        <a class="nav" href="#content_2">Таблица</a>
-      </div>
-      <div>  
-        <a class="nav" href="#content_3">Форма</a>
-      </div>
-    </nav>
- </nav>
+    <body id="body" >
+        <header id="header">
+          <div style="width:100%; background-color:lightgreen; height:125px;">
+<img style="float:left; margin:10px; width:100px; height:100px;" src="https://i.pinimg.com/originals/23/80/0b/23800b995292379883a15d9a4c382b22.png" alt="Описание " />
+      <div style="background-color:#B8860B; padding:10px;"><h1>Шапка</h1></div>
     </div>
-   <u2> <div style="width:300px; background-color:Tan; margin:30px; padding:5px;">
-      <span style="background-color:red;">
-          <p>Я далёк от того, чтобы восхищаться всем, что вижу вокруг себя;
-              как писатель я огорчён…, многое мне претит, но клянусь вам моей
-              честью – ни за что в мире я не хотел бы переменить Родину, или иметь
-              иную историю, чем история наших предков, как её нам дал Бог.</p>
-         <p> -А.С.Пушкин.
-    </div>
-       </u2>
-    </div>
- </body>
- <body>
-      <div style="width:1000px; background-color:lightblue; margin:30px; padding:5px;">
-<ol> 
+
+        </header>
+
+        <nav id="new">
+            <a id="content1" href="#content_1">Гипперссылки</a>
+            <a id="content2" href="#content_2">Таблица оценок</a>
+            <a id="content3" href="#content_3">Форма</a>
+        </nav>
+
+<div class="content" id="content_1">
+    <a>Гиперссылки</a>
+ 
  <li><a href="http://kubsu.ru/">КубГУ</a> </li> 
  <li><a href="https://example.com">example.com(абсолютную на главную сайта example.com в протоколе https)</a> </li> 
  <li><a href="ftp://example.com">example.com(ссылку на файл на сервере FTP без авторизации)</a> </li>
@@ -91,8 +60,9 @@
  <li><a href="/">(Сокращенная ссылка на главную)</a></li>
  <li><a href="/example">(Сокращенная ссылка на внутреннюю)</a></li>
 </ol> 
-     </div>
-  <head>
+</div>
+<div class="content" id="content_2">
+   <head>
     <title>Таблица</title>
   </head>
 <table border="3" width="60%" cellspacing="0" bordercolor="blue">
@@ -120,9 +90,11 @@
   <td colspan="3"> Объединение по горизонтали ячеек </td>
  </tr>
   </table>
-
+</div>
+<div class="content" id="content_3">  
+    <a>Форма</a>
 <br>
-<form><label>Имя: <input name="name_polz" maxlength="25" size="25" value=""></label><br>
+    <form><label>Имя: <input name="name_polz" maxlength="25" size="25" value=""></label><br>
         <br><label>email:<input name="email_polz" type="email" maxlength="128" size="40" placeholder="Введите ваш email"></label><br>
         <br><label>Дата рождения: <input name="data_polz" type="date" value="2003-02-01"></label><br>
         <br><label>Пол:<input name="pol" type="radio" checked="checked"> Мужской</label><label><input name="pol" type="radio"> Женский</label><br>
@@ -161,4 +133,9 @@
         <br><label>
             <input type="submit" value="Отправить">
         </label></form>
+</div>
+<footer id="footer">
+    <span id="sozd">Чепурной Михаил</span>
+</footer>
 </body>
+</html>
