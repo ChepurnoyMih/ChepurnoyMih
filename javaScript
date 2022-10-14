@@ -1,9 +1,17 @@
-<script>
-function click1() {
- let f1 = document.getElementsByName("field1");
- let f2 = document.getElementsByName("field2");
- let r = document.getElementById("result");
- r.innerHTML = f1[0].value + f2[0].value;
- return false;
+function onClick(){
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var result=document.getElementById("result");
+var x;
+var y;
+ result.innerHTML = "";
+x = a;
+y = b;
+if (x>0 && x!=NaN && y>0 && y!=NaN)
+result.innerHTML=x*y;       
 }
-</script>
+window.document.addEventListener("DOMContentLoaded", function (event) {
+    console.log("DOM fully loaded and parsed");
+    var y = document.getElementById("btn");
+    y.addEventListener("click", onClick);
+});
