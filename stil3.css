@@ -9,3 +9,18 @@ text-align: center;
 height: 300px;
 margin: 0 auto;
 }
+.cont2 {
+max-width:600px;
+background-color: rgb(255, 255, 0);
+text-align: center;
+height: 250px;
+margin: 0 auto;
+}
+#second{
+text-align: center;
+padding-top: 15px;
+}
+
+#vibor {
+margin-top: 10px;
+}
