@@ -1,24 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet"  href="https://ChepurnoyMih.github.io/stil3.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Задание №5</title>
+     <script src="https://ChepurnoyMih.github.io/javaScript"></script>
+  </head>
+<body>
+  <form><div class="cont">		
+	<p>Цена товара</p>
+	<input type="text" id="a">
+	<p> Кол-во товара</p>
+	<input type="text" id="b">
+	<p><input type="button" value="Посчитать" id="btn" onClick="onClick();"></p>
+	<br><p>Счет</p>
+        <div id="result"></div>
+	</div>
+  </form>  
 
+	<div class="cont2">
+	<p>Задание 6</p>
+        <form id="second">
+            <label>Количество товара:<input id="kol"></label><br>
+    <select name="prodType" id="vibor">
+      <option value="1">Продукт 1</option>
+      <option value="2">Продукт 2</option>
+      <option value="3">Продукт 3</option>
+    </select>
+    <div id="radios" style="display: none;">
+      <label><input type="radio" name="prodOptions" value="option1">Опция№ 1</label>
+      <label><input type="radio" name="prodOptions" value="option2"> Опция№ 2</label>
+      <label><input type="radio" name="prodOptions" value="option3"> Опция№ 3</label>
+    </div>
+    <div id="checkboxes" style="display: block;">
+      <label><input type="checkbox" name="prop1">Новый товар</label>
+    </div>
+     <br><p>Итого: </p>
+    <div id="result">
+    </div>
+  </form>
+    </div>
 
-
-    <script>
-function click1() {
- let f1 = document.getElementsByName("field1");
- let f2 = document.getElementsByName("field2");
- let r = document.getElementById("result");
- r.innerHTML = f1[0].value + f2[0].value;
- return false;
-}
-</script>
-
-</script> 
-<div id="result"></div>
-<form>
- <input name="field1" type="text">
- <input name="field2" type="text">
- <button id="button1" onclick="return click1();">OK</button>
-    </form> 
-
-
-
-
+</body>
+</html>
