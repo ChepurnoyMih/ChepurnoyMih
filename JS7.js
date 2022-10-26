@@ -9,7 +9,7 @@ jQuery(function ($) {
                     settings: {
                         arrows: true,
                         dots: true,
-                        slidesToShow: 2
+                        slidesToShow: 2 
                     }
                 }
             ],
