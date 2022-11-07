@@ -1,12 +1,12 @@
 import { useForm } from '@formcarry/react'
 
 ;function MyFormcarry( ){
-  // Call the `useForm` hook in your function component
+ 
   const {state, submit} = useForm({
     id: 'Your-Form-ID-From-Formcarry'
   });
 
-  // Success message
+ 
   if (state.submitted) {
     return <div>Thank you! We received your submission.</div>;
   }
