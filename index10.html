@@ -1,13 +1,34 @@
-<!DOCTYPE html>
-  <html lang="ru">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://ChepurnoyMih.github.io/still2.css">
-      <link rel="stylesheet" href="https://ChepurnoyMih.github.io/cssMenu">
-      <title>Задание 10</title>
-    </head>
+
+<style>
+
+/* Свойства закрытого меню */
+.button {
+  width: 100px;
+  height: 25px;
+  background-color: green;
+  color: white;
+  /* CSS-трансформация, все свойства будут плавно меняться одну секунду */
+  transition: all 1s ease;
+}
+
+/* Свойства раскрытого меню */
+.opened {
+  background-color: red;
+  color: black;
+  height: 400px;
+}
+</style>
+
+<script>
+// Ждем загрузки DOM. Элемент <body> будет загружен автоматически.
+window.addEventListener('DOMContentLoaded', function() {
+  var button = document.getElementById('button');
+  button.addEventListener('click', function(event) {
+    // Переключаем класс .opened
+    event.target.classList.toggle('opened');
+  });
+
+});
+</script>
+
 <div id="button" class="button">Click Me!</div>
-  
-  </html>
