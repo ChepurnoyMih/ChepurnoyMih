@@ -1,31 +1,92 @@
-<html>
-  <head>
-    <style>
-/* Сообщения об ошибках и поля с ошибками выводим с красным бордюром. */
-.error {
-  border: 2px solid red;
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Задание 4 </title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="web_style.css">
+	</head>
+	<body>
+    		<div class="container" style= "background-color: #A52A2A;">
+      			<div class="forma">
+                <h2 id="Форма">Форма</h2>
+                <form action="web_form.php" method="POST" id="form" >
+                    <label for="name"> Имя: </label>
+                        <br />
+                                          <input type="text" name="name" id="name" value="" placeholder="Введите имя">
+                    <br />
+                    <label for="email"> Почта: </label>
+                  			<br />
+			<input type="email" name="email" id="email" value="" placeholder="Введите вашу почту" >
+			<br />
+			<label for="year"> Год рождения: </label>
+                   
+			<br />
+			<select name="year" id="year" >
+				<option value="">Выберите год</option>
+			</select>
+			<br />
+			<label> Пол: </label>
+			<br />
+                  			<label><input type="radio" checked="checked" name="sex" value="Мужской"  />М</label>
+			<label><input type="radio" name="sex" value="Женский"  />Ж</label>
+						<br />
+			<label>	Кол-во конечностей: </label>
+                  						<br />
+						<label>
+							<input type="radio" checked="checked" name="legs" value="1"   />1
+						</label>
+						<label>
+							<input type="radio" name="legs" value="2"  />2
+						</label>
+						<label>
+							<input type="radio" name="legs" value="3"  />3
+						</label>
+						<label>
+							<input type="radio" name="legs" value="4"  />4
+						</label>						
+						<br />
+					
+                           <label> Сверхспособности: </label>
+                            <br />
+							<select name="powers[]" id="powers" multiple="multiple" >
+								<option value="Бессмертие" >Бессмертие</option>
+								<option value="Прохождение сквозь стены" >Прохождение сквозь стены</option>
+								<option value="Левитация" >Левитация</option>
+							</select>
+						</label>
+						<br />
+						<label for="bio"> Биография: </label>
+							<br />
+							<textarea name="bio" id="bio"  placeholder="Придумайте свою биографию..."></textarea>
+						<br />
+						<br />
+						<label>
+							С контрактом ознакомлен(а) <input type="checkbox" name="agree" value="yes" />
+							</label>
+						<br />
+                        <div class="button">
+                            <input type="submit" value="Отправить" />
+                        </div>
+                    </form>
+				<script>
+              const select = document.getElementById('year');
+              const currentYear = new Date().getFullYear();
+              for (let i = currentYear; i >= currentYear - 100; i--) {
+                  const option = document.createElement('option');
+                  option.value = i;
+                  option.text = i;
+                  if(i == "") 
+                     {
+                     option.selected = true;
+                     }
+                  select.add(option);
 }
-    </style>
-  </head>
-  <body>
 
-<?php
-if (!empty($messages)) {
-  print('<div id="messages">');
-  // Выводим все сообщения.
-  foreach ($messages as $message) {
-    print($message);
-  }
-  print('</div>');
-}
-
-// Далее выводим форму отмечая элементы с ошибками классом error
-// и задавая начальные значения элементов ранее сохраненными.
-?>
-
-    <form action="" method="POST">
-      <input name="fio" <?php if ($errors['fio']) {print 'class="error"';} ?> value="<?php print $values['fio']; ?>" />
-      <input type="submit" value="ok" />
-    </form>
-  </body>
-</html>
+    </script>
+                </div>
+            </div>
+        </body>
+        </html>
