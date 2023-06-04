@@ -13,7 +13,7 @@ form {
     height: 600px;
     padding: 30px;
     border: 1px solid rgba(255, 0, 0, 0.404);
-    background-color: rgba(94, 255, 0, 0.185);
+    background-color: rgba(0, 0, 255, 1);
     border-radius: 15px;
 }
 .mrg {
