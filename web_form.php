@@ -97,7 +97,7 @@
     }
     else {
         try { 
-        $db = new PDO ("mysql:host=localhost;dbname=u52876", $user, $pass, [PDO::ATTR_PERSISTENT => true,
+        $db = new PDO ("mysql:host=localhost;dbname=u52886", $user, $pass, [PDO::ATTR_PERSISTENT => true,
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         $stmt = $db->prepare("INSERT INTO info VALUES(NULL, :fname, :email, :bdate, :gender, :limb, :biography)");
 
